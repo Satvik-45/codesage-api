@@ -8,7 +8,9 @@ import qaRoutes from "./routes/qa.routes";
 const app = express();
 app.use(
     cors({
-        origin: ["http://localhost:5173"],
+        origin: ["http://localhost:5173",
+            "https://codesage-liard.vercel.app"
+        ],
         credentials: true,
     })
 );
